@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/barebones.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-16.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="grid-container halves">
+      <div>
+        <h1>Webhook Amp</h1>
+        <h3>Example URL: 'https://2rygsn9pzc.execute-api.us-east-1.amazonaws.com/dev/amp?url=http://www.google.com&url=http://bing.com'</h3>
+        <h4>This servers allows you to send the same singular webhook request to multiple endpoints</h4>
+        <p>
+            This service accepts multiple valid URLS with a key of 'url' in the query string to build the list of endpoints to forward the request too.
+            Url Parser uses <a href="https://url.spec.whatwg.org/#urls">this standard</a> so please ensure your urls are compliant.
+            Example query string would look like /amp?url=http://www.google.com&url=http://bing.com
+            You can use this endpoint as an example:
+            'https://2rygsn9pzc.execute-api.us-east-1.amazonaws.com/dev/amp'
+            Please note that all your webhook data will pass through this service, so if security or confidentiality are important
+            I suggest you clone the <a href="https://github.com/krysttian/webhook-amp">Repo</a> and deploy yourself using serverless deploy
+        </p>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
