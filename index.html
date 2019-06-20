@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Webhook Amp</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -21,7 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/barebones.css">
-
+  <link rel="stylesheet" href="css/style.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon-16.png">
@@ -46,9 +46,26 @@
             I suggest you clone the <a href="https://github.com/krysttian/webhook-amp">Repo</a> and deploy yourself using serverless deploy
         </p>
     </div>
+    <div>
+      <h3> URL Generator</h3>
+      <p>
+        the below text area will allow you to insert multiple URL's (one per line please) and will generate a URL for you using the example service at the URL:
+        'https://2rygsn9pzc.execute-api.us-east-1.amazonaws.com/dev/amp'
+      </p>
+      <label for="#urlTextArea">Please place one URL per line into the text area, pressing enter to start a new line</label>
+      <span>
+        <textarea id='urlTextArea'></textarea>
+      </span>
+      <span>
+        <code id="codebox">
+        </code>
+      </span>
+    </div>
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/index.js" type="text/javascript"></script>
+
 </body>
 </html>
