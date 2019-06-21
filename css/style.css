@@ -1,4 +1,12 @@
 #codebox{
     display: block;
-    white-space: pre-wrap  
+    white-space: pre-wrap;
+}
+
+#urlTextArea{
+    width: 80%;
+}
+
+#codebox{
+max-width: 80%;
 }

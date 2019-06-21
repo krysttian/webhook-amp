@@ -34,7 +34,10 @@
   <div class="grid-container halves">
       <div>
         <h1>Webhook Amp</h1>
-        <h3>Example URL: 'https://2rygsn9pzc.execute-api.us-east-1.amazonaws.com/dev/amp?url=http://www.google.com&url=http://bing.com'</h3>
+        <p>
+          Example URL:<br>
+          https://2rygsn9pzc.execute-api.us-east-1.amazonaws.com/dev/amp?url=http://www.google.com&url=http://bing.com
+        </p>
         <h4>This servers allows you to send the same singular webhook request to multiple endpoints</h4>
         <p>
             This service accepts multiple valid URLS with a key of 'url' in the query string to build the list of endpoints to forward the request too.
@@ -57,8 +60,9 @@
         <textarea id='urlTextArea'></textarea>
       </span>
       <span>
-        <code id="codebox">
-        </code>
+        <pre id="codebox">
+        </pre>
+        <!-- <button id="copyToClipBoard">Copy to ClipBoard</button> -->
       </span>
     </div>
   </div>

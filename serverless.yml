@@ -128,5 +128,9 @@ package:
     - npm-debug.log
     - .serverless/**
     - .serverless_plugins/**
+    - js/**
+    - css/**
+    - index.html
+    - images/**
   include:
     handler.ts
